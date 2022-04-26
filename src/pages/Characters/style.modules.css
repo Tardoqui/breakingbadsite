@@ -1,0 +1,30 @@
+.div-card {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, rgb(255, 220, 220) 0%, rgb(243, 188, 188) 100%);
+    
+}
+.container-card{
+    
+    border: 1px solid black;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgb(102, 88, 88) 0%, rgb(243, 188, 188) 100%);
+    margin: 20px;
+}
+.card {
+
+    width: 300px;
+    height: auto;
+    margin: 15px;
+   
+}
+.card-image {
+    height: 180px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+.card-text {
+    margin-left: 5px;
+    text-align: center;
+}

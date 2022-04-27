@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom';
+
 import './style.modules.css'
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
@@ -10,6 +10,7 @@ export const Button = ({
   type,
   onClick,
   buttonStyle,
+  goTo,
   buttonSize
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
@@ -19,7 +20,7 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <a href='https://www.emmys.com/shows/breaking-bad' className='btn-mobile'>
+    <a href={goTo} className='btn-mobile'>
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

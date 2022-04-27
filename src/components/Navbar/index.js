@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Breaking Bad
+            <h2>Breaking Infos</h2>
             
           </Link>
           <div className='menu-icon' onClick={handleClick}>

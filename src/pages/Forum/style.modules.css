@@ -1,0 +1,7 @@
+.forum-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-forum {
+    padding: 10px;
+}

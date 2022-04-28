@@ -1,0 +1,212 @@
+:root {
+    --font: "Roboto", sans-serif;
+    --fontOrigin: 1rem;     
+    --fontSmall: 0.625em;   
+    --fontMedium: 0.875em;  
+    --fontNormal: 1em;      
+    --fontLarge:  1.375em;  
+    --fontLight: 100;
+    --fontRegular: 400;
+    --speed: 0.65s;
+  }
+  
+ .character-container {
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    
+ }
+  
+ 
+  
+  .wrapper {
+    
+    
+
+    padding: 40px;
+    
+  }
+  
+  
+  .card {
+    position: relative;
+   justify-content: center;
+   
+    
+    
+    width: 100%;
+    max-width: 250px;
+    height: 400px;
+    font-size: var(--fontOrigin);
+    border-radius: 8px;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  
+  
+  
+  .card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
+  }
+  
+  .card__image img {
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+    animation-name: zoom;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .card:hover .card__image img {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 0.5;
+  }
+  
+  .card__header {
+    display: flex;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .card__profile {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    overflow: hidden;
+    width: 10vmax;
+    height: 10vmax;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+  
+  .card__profile img {
+    -webkit-transform: scale(1.5, 1.5)  translateZ(0);
+    transform: scale(1.5, 1.5)  translateZ(0);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    -webkit-filter: grayscale(50%) contrast(75%) brightness(1.3);
+    filter: grayscale(50%) contrast(75%) brightness(1.3);
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+    mix-blend-mode: normal;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card:hover .card__profile img {
+    -webkit-transform: scale(1, 1)  translateZ(0);
+    transform: scale(1, 1)  translateZ(0);
+  }
+  
+  .card__body {
+    display:block;
+    justify-content:center;
+    padding: 0 20px;
+  }
+  
+  .card__name {
+
+    margin-bottom: 2px;
+    color: white;
+    font-size: var(--fontLarge);
+    font-weight: var(--fontLight);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    background: -webkit-linear-gradient(rgb(12, 12, 12), #520606);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+  }
+  
+  .card:hover .card__name {
+    background: -webkit-linear-gradient(white, #c1c1c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card__job {
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    font-size: var(--fontSmall);
+    font-weight: var(--fontLight);
+    text-align: center;
+    letter-spacing: 0.35rem;
+    color: rgb(0, 0, 0);
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+  }
+  
+  .card:hover .card__job {
+    color: rgba(100, 130, 200, 1);
+  }
+  
+  .card__bio {
+    position: relative;
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    display: block;
+    margin: 22px 0 16px 0;
+    font-size: var(--fontMedium);
+    font-weight: var(--fontLight);
+   
+    color: rgba(255, 255, 255, 0.65);
+    opacity: 0;
+    -webkit-transition: all var(--speed) ease;
+    transition: all var(--speed) ease;
+  }
+  
+  .card:hover .card__bio {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  
+  .card__date {
+    
+    display: inline-block;
+    align-self: left;
+    justify-self: left;
+    font-size: var(--fontSmall);
+    font-weight: var(--fontLight);
+    text-transform: uppercase;
+    text-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.45);
+    color: rgba(250, 250, 250, 0.4);
+  }
+  
+ 
+  

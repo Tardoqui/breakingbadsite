@@ -11,9 +11,16 @@ function ForumForm() {
         name: "",
         email: "",
         text: "",
-    });
+		answers: [],	
+	});
 
-    function handleAddHelp(e){
+
+
+
+
+
+
+    function handleAddPost(e){
         setAddForm({ ...addform, [e.target.name]: e.target.value });
 		
     }
@@ -27,7 +34,7 @@ function ForumForm() {
         setAddForm({
           name: "",
           email: "",
-          text: "",
+          post: "",
         });
 		
       }
@@ -40,49 +47,48 @@ function ForumForm() {
     return (  
         <div className="forum-div">
 			<form onSubmit={handleSubmit} className="form-forum" >
-				<div className="">
+				<div className="name-div">
 					<label htmlFor="nome" className="">
-					<strong>Nome: </strong>
+					<strong>Name: </strong>
 					</label>
 					<input
 						type="text"
-						className=""
+						className="input-name"
                         name="name"
 						id="nome"
 						aria-describedby="emailHelp"
                         value={addform.name}
-                        onChange={handleAddHelp}
+                        onChange={handleAddPost}
 					/>
 					
 				</div>
-				<div className="">
+				<div className="email-div">
 					<label htmlFor="email" className="">
 					<strong>E-mail: </strong>
 					</label>
 					<input
 						type="email"
-						className=""
+						className="input-email"
 						id="email"
                         name="email"
                         value={addform.email}
-                        onChange={handleAddHelp}
+                        onChange={handleAddPost}
 					/>
 				</div>
-				<div  className="">
+				<div  className="post-div">
 					<textarea
-						className=""
+						className="post-area"
 						placeholder="Message here!"
 						id="post"
-						style={{height: '100px'}}
-                        name="text"
-						value={addform.text}
-						onChange={handleAddHelp}
+                        name="post"
+						value={addform.post}
+						onChange={handleAddPost}
 					></textarea>
-					<label style={{ opacity : '0.5' }} htmlFor="post"></label>
+					<label htmlFor="post"></label>
 				</div>
            
-				<button  type="submit" className="">
-					AskHelp!
+				<button  type="submit" className="post-button">
+					Send!
 				</button>
 			</form>
 		</div>

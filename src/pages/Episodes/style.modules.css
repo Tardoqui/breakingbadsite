@@ -1,24 +1,5 @@
 .div-episodes {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    background: linear-gradient(90deg, rgb(241, 135, 135) 0%, rgb(243, 218, 218) 100%);
-
-}
-.episodes-section {
-    margin: 25px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgb(236, 224, 224) 0%, rgb(202, 161, 161) 100%);
-
-}
-
-.episodes-image {
-    width: 300px;
-    height: 270px;
-    border-radius: 10px 10px 0 0;
-}
-.episodes-text {
-    text-align: center;
-    padding: 8px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }

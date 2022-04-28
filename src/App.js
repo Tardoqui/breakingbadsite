@@ -6,6 +6,7 @@ import Characters from "./pages/Characters";
 import Episodes from "./pages/Episodes";
 import Forum from "./pages/Forum";
 import Home from "./pages/Home";
+import PostDetail from "./pages/PostDetails";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/characters" element={<Characters />} />
         <Route path="/episodes" element={<Episodes />} />
 		<Route path='/forum' element={<Forum />} />
+		<Route path="/forum/:postId" element={<PostDetail />} />
 			</Routes>
 
 			<Footer />

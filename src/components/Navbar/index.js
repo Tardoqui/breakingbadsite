@@ -22,7 +22,7 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+ 
 
   return (
     <>
@@ -45,6 +45,7 @@ function Navbar() {
               <Link
                 to='/characters'
                 className='nav-links'
+
                 onClick={closeMobileMenu}
               >
                 Characters

@@ -36,24 +36,24 @@ function Characters() {
 		<>
 			<SearchBar filterState={filterMovies} />
 
-			<div className="character-container">
-				{characters.map((currentCharacter) => {
+			<div key={characters.name} className="character-container">
+				{characters.map((currentCharacter, index) => {
 					return (
 
-						<section class="wrapper">
-							<div class="card" data-effect="zoom">
+						<section key ={index} className="wrapper">
+							<div className="card" data-effect="zoom">
 								
-								<figure class="card__image">
+								<figure className="card__image">
 									<img
 										src={currentCharacter.img}
 										alt="Short description"
 									/>
 								</figure>
-								<div class="card__header"></div>
-								<div class="card__body">
-									<h3 class="card__name">{currentCharacter.name}</h3>
-									<p class="card__job">{currentCharacter.occupation[0]}</p>
-									<p class="card__bio">
+								<div className="card__header"></div>
+								<div className="card__body">
+									<h3 className="card__name">{currentCharacter.name}</h3>
+									<p className="card__job">{currentCharacter.occupation[0]}</p>
+									<p className="card__bio">
 										{" "}
 										
 
@@ -61,9 +61,9 @@ function Characters() {
 									</p>
 							
 								</div>
-								<div class="card__footer">
-									<p class="card__date">NickName: {currentCharacter.nickname}</p>
-									<p class=""></p>
+								<div className="card__footer">
+									<p className="card__date">NickName: {currentCharacter.nickname}</p>
+									<p className=""></p>
 								</div>
 							</div>
 						</section>

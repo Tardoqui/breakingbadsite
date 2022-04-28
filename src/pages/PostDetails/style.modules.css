@@ -1,0 +1,32 @@
+.card-detail-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 300px 20px 300px;
+    border: 3px solid grey;
+    border-radius: 5%;
+    position: relative;
+    
+}
+.card-detail-container {
+  padding: 25px;
+    
+}
+.card-detail-post{
+    margin-top: 15px;
+}
+
+.card-detail-name {
+    padding-bottom: 4px;
+}
+
+.card-detail-email {
+    margin: 3px 0 8px 0;
+
+}
+.delete-button {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(228, 77, 77);
+    margin: 20px;
+}

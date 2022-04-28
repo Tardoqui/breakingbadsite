@@ -1,5 +1,7 @@
+
 import ForumFeed from "../../components/ForumFeed";
 import ForumForm from "../../components/ForumForm";
+
 
 function Forum() {
   
@@ -8,6 +10,7 @@ function Forum() {
         <>
             <ForumForm />
             <ForumFeed />
+            
         </>
      );
 }

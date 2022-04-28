@@ -1,7 +1,43 @@
 .forum-div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .form-forum {
+    margin-left: 25px;
+    margin-top: 25px;
+    border: 1.5px solid rgb(212, 95, 95);
+    border-radius: 10px;
+    width: 500px;
+}
+.name-div {
     padding: 10px;
+}
+.email-div {
+    padding: 10px;
+}
+.post-div {
+    padding: 10px;
+    text-align: center;
+    
+}
+.post-button {
+    height: 30px;
+    width: 150px;
+    margin-left: 15px;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+.post-area {
+    width: 405px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 8px;
+}
+.input-name {
+    width: 300px;
+}
+.input-email {
+    width: 296px;
 }

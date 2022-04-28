@@ -69,9 +69,9 @@ function PostDetail() {
 			</div>
 			
 			<div>
-			{user.answers.map((currentAnswer) => {
+			{user.answers.map((currentAnswer, index) => {
 				return (
-					<div> 
+					<div key={index}> 
 					<p>{currentAnswer.answer}</p>
 					<span>by: {currentAnswer.owner}</span>
 					</div>

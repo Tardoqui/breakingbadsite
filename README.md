@@ -6,6 +6,8 @@ Site foi todo construído com JavaScript, HTML e CSS. Utilizando a biblioteca RE
 
 Deploy Link:  https://whimsical-choux-6ae107.netlify.app/ 
 
+Link da apresentação: https://prezi.com/view/uZixA8gCWWal2Nyiw5BN/
+
 
 
 # Getting Started with Create React App

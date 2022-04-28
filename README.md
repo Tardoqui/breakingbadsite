@@ -4,7 +4,7 @@
 Este site foi desenvolvido com o propósito de melhorar minha habilidades existentes em react, como também desenvolver algumas novas. 
 Site foi todo construído com JavaScript, HTML e CSS. Utilizando a biblioteca REACT JS para fazer um website com o modelo SPA (Single Page App).
 
-[Clique aqui para acessar o jogo] (https://whimsical-choux-6ae107.netlify.app/). 
+Deploy Link:  https://whimsical-choux-6ae107.netlify.app/ 
 
 
 
